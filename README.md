@@ -2,8 +2,8 @@
 An intelligent, 2-axis (Pan/Tilt) target tracking system built with Arduino. Unlike simple radars, this system scans the room, anticipates target movement using predictive algorithms, and uses "Range Gating" to lock onto a specific target while ignoring background noise.
 
 ## 🚀 Features
-* **Predictive Tracking (EMA):** Uses an Exponential Moving Average algorithm to calculate the target's momentum and predict its next position for smoother tracking.*(Added in V2!)* 
-* **Digital Double-Check Filter:** Replaces standard median filtering with a custom double-ping logic. It eliminates false echoes and introduces precise delays to prevent strong servos from jittering.*(Added in V2!)*
+* **Predictive Tracking (EMA):** Uses an Exponential Moving Average algorithm to calculate the target's momentum and predict its next position for smoother tracking. *(Added in V2!)* 
+* **Digital Double-Check Filter:** Replaces standard median filtering with a custom double-ping logic. It eliminates false echoes and introduces precise delays to prevent strong servos from jittering. *(Added in V2!)*
 * **Dynamic Range Gating (±10cm):** Once a target is locked, it tracks only that specific object's depth profile, effectively ignoring background objects (like walls or desks).
 * **Raster Scan Algorithm:** Scans the space systematically in a 2D zig-zag grid to acquire or re-acquire a target.
 * **Auto-Centering:** Safely resets to a default position if the target is permanently lost.
